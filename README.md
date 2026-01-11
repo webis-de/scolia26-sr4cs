@@ -106,9 +106,6 @@ python src/experiments/transform_to_sqlite_query.py
 
 # SQLite FTS5 index over refs and evaluation
 python src/experiments/sqlite_build_fts5.py
-python src/experiments/sqlite_query_all.py
+python src/experiments/boolean_exps.py
 
-# (Optional) Elasticsearch index and evaluation
-python src/experiments/es_load_docs.py
-python src/experiments/es_query_all.py
 ```

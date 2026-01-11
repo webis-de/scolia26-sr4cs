@@ -3,7 +3,7 @@
 ### Overview
 
 SR4CS is a benchmark dataset of systematic reviews in Computer Science. This repository provides the full codebase for dataset construction and baseline experiments.
-- The dataset itself (JSON + reference pool in multiple formats) is hosted on Zenodo: LINK
+- The dataset itself (JSON + reference pool in multiple formats) is hosted on Zenodo: [LINK](https://zenodo.org/records/17163932)
 
 This repository contains the pipelines for:
 - Retrieving and filtering candidate SRs from DBLP.
@@ -12,7 +12,7 @@ This repository contains the pipelines for:
 - Extracting and enriching references (metadata + abstracts).
 - Building final JSON/Parquet/SQLite/Elasticsearch datasets.
 - Translating Boolean Queries to SQL Match Syntax.
-- Running baseline retrieval experiments (SQLite FTS5 and Elasticsearch).
+- Running baseline retrieval experiments (SQLite FTS5, BM25, Dense).
 
 ---
 
@@ -20,7 +20,7 @@ This repository contains the pipelines for:
 - src/retrieval/ — Fetch, filter, and prepare SR candidates + PDFs.
 - src/extraction/ — OCR/LLM field extraction and reference parsing + enrichment.
 - src/utils/ — Assembly and dataset hygiene (ID updates, metadata integration).
-- src/experiments/ — Retrieval baselines (SQLite, Elasticsearch).
+- src/experiments/ — Retrieval baselines (SQLite, BM25, Dense).
 
 ---
 
